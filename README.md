@@ -14,12 +14,12 @@ Simple vending machine designed to dispense products based on user input and pro
 
 - In this state, the vending machine processes the user's **money input**.
 - If the user requests a product (`product_x` or `product_y`), it checks if there's enough money to **dispense the selected product**.
-- If there's **insufficient funds**, it returns to the `Idle` state.
-- If there's **enough money**, it dispenses the product and transitions back to the `Idle` state.
+- For **insufficient funds**, it returns to the `Idle` state.
+- For **enough money**, gives the product and goes back to the `Idle` state.
 
 ### Product & Change
 
-- In this state, the vending machine calculates the **remaining change** to be returned to the user.
+- Calculates the **remaining change** to be returned to the user.
 - It calculates the change in terms of `1 Lei` and `50 Bani`.
 - After calculating the change, it transitions back to the `Idle` state.
 
@@ -40,8 +40,8 @@ Simple vending machine designed to dispense products based on user input and pro
 
 - `give_product_x`: Signal to dispense product `X`.
 - `give_product_y`: Signal to dispense product `Y`.
-- `give_remaining_50bani`: Signal to dispense remaining `50 Bani` as change.
-- `give_remaining_1lei`: Signal to dispense remaining `1 Lei` as change.
+- `give_remaining_50bani`: Signal to dispense rest `50 Bani` as change.
+- `give_remaining_1lei`: Signal to dispense rest `1 Lei` as change.
 
 ## Usage
 
