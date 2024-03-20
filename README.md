@@ -7,8 +7,8 @@ Simple vending machine designed to dispense products based on user input and pro
 ### Idle
 
 - In this state, the vending machine **awaits user input**.
-- Upon **receiving money** or a request for a product, it transitions to the `Money` state.
-- Upon **receiving a request** for change, it transitions directly to the `Product & Change` state.
+- **Receives money / request for a product**, it transitions to the `Money` state.
+- **Receives request for change**, it goest to the `Product & Change` state.
 
 ### Money
 
