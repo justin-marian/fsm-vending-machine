@@ -1,6 +1,6 @@
 # Vending Machine
 
-Simple vending machine designed to dispense products based on user input and provide change when necessary. The vending machine operates in three main states: `Idle`, `Money`, and `Product & Change`.
+Simple `finite state vending machine` designed to dispense products based on user input and provide change when necessary. The vending machine operates in three main states: `Idle`, `Money`, and `Product & Change`.
 
 ## States
 
